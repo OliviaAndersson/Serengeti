@@ -69,7 +69,7 @@ main {
   }
 
   .booking {
-    border: 3px solid #515f52;
+    border: 3px solid $footercolor;
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -107,7 +107,7 @@ main {
       select {
         margin: 0 auto;
         background-color: #fff;
-        border: 1px solid #515f52;
+        border: 1px solid $green;
         font-family: $breadfont;
         text-transform: uppercase;
         display: inline;
@@ -185,7 +185,7 @@ main {
       padding-top: 40px;
       text-align: center;
       font-size: 1.5rem;
-      color: #a79d85;
+      color: $gold;
     }
 
     #icons-container {
