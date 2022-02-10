@@ -1,0 +1,522 @@
+@import "styles";
+
+@import "mixins";
+
+body {
+  width: 100%;
+  margin: 0;
+  @include header;
+  @include footer;
+  background-color: $bgcolor;
+  font-size: 12pt;
+}
+
+#header-phone #links,
+#header-desktop,
+#hamburger {
+  background-color: $green;
+}
+
+#book-link {
+  background-color: $gold;
+}
+// h4 {
+//   font-weight: 400;
+//   font-size: 39px;
+//   width: 100px;
+//   float: left;
+//   margin: 12px;
+//   font-family: "Indie Flower", cursive;
+//   padding-left: 10px;
+//   color: #303223;
+// }
+
+#background {
+  background-image: url("../assets/lion.jpg");
+  height: 80vh;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  #border {
+    width: 100%;
+    background-image: url("../assets/borderu.png");
+    position: absolute;
+    background-repeat: repeat-x;
+    height: 10px;
+    background-size: 75px 10px;
+    bottom: 0;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  #discover-desktop {
+    display: none;
+  }
+  #discover-phone {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    h1 {
+      font-family: $headerfont;
+    }
+    h2 {
+      font-family: $josefin;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: $breadfont;
+    }
+
+    .activity {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .text {
+        width: 100%;
+        border-top: 1px solid black;
+        margin-top: 20px;
+      }
+
+      .pic {
+        width: 100%;
+        background-position: center;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+      }
+      #yoga {
+        background-image: url("../assets/yoga.jpg");
+      }
+      #cooking {
+        background-image: url("../assets/food.jpg");
+      }
+      #food {
+        background-image: url("../assets/mat.jpg");
+      }
+      #spa {
+        background-image: url("../assets/spa.jpg");
+      }
+      #relax {
+        background-image: url("../assets/relax.jpg");
+      }
+      #safari {
+        background-image: url("../assets/safari.jpg");
+      }
+    }
+  }
+
+  .booking {
+    border: 3px solid #5b625d;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+
+    h1 {
+      font-family: $josefin;
+      text-align: center;
+      margin: 0;
+    }
+
+    #validation {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: $josefin;
+      font-weight: 600;
+      color: $gold;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+
+      #choose-date,
+      #activity,
+      #people {
+        width: 80%;
+        text-align: center;
+        font-family: $breadfont;
+
+        input,
+        select {
+          width: 100%;
+          margin: 10px 0 0 0;
+          height: 5vh;
+          font-family: $breadfont;
+        }
+      }
+      #button {
+        width: 65%;
+        height: 5vh;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 5px;
+        background-color: $gold;
+        color: #fff;
+        cursor: pointer;
+        font-family: $breadfont;
+      }
+    }
+  }
+
+  #confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-family: $josefin;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $gold;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    #discover-phone {
+      display: none;
+    }
+    #discover-desktop {
+      width: 90%;
+      margin: 0 auto;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 100px;
+      align-items: center;
+
+      h1 {
+        font-family: $headerfont;
+      }
+      h2 {
+        font-family: $josefin;
+        font-weight: 600;
+      }
+
+      p {
+        font-family: $breadfont;
+      }
+
+      .activity {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // align-items: center;
+
+        #left {
+          border-right: 1px solid black;
+          padding: 10px;
+        }
+
+        #right {
+          border-left: 1px solid black;
+          padding-left: 20px;
+        }
+        .text {
+          width: 40%;
+        }
+
+        svg {
+          width: 2px;
+        }
+        #line {
+          height: 200px;
+          width: 2px;
+          border-right: 2px solid black;
+        }
+
+        .pic {
+          width: 45%;
+          background-position: center;
+          height: auto;
+          background-size: cover;
+          background-position: center;
+        }
+        #yoga {
+          background-image: url("../assets/yoga.jpg");
+        }
+        #cooking {
+          background-image: url("../assets/food.jpg");
+        }
+        #food {
+          background-image: url("../assets/mat.jpg");
+        }
+        #spa {
+          background-image: url("../assets/spa.jpg");
+        }
+        #relax {
+          background-image: url("../assets/relax.jpg");
+        }
+        #safari {
+          background-image: url("../assets/safari.jpg");
+        }
+      }
+    }
+
+    .booking {
+      border: 3px solid #5b625d;
+      width: 70%;
+      height: 30vh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h1 {
+        font-family: $josefin;
+        text-align: center;
+        margin: 0;
+      }
+
+      #validation {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: $josefin;
+        font-weight: 600;
+        color: $gold;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        #choose-date,
+        #activity,
+        #people {
+          width: 20%;
+          text-align: center;
+          font-family: $breadfont;
+
+          input,
+          select {
+            width: 100%;
+            margin: 10px 0 0 0;
+            height: 5vh;
+            font-family: $breadfont;
+          }
+        }
+        #button {
+          width: 15%;
+          height: 5vh;
+          margin: 0;
+          padding: 0;
+          border: none;
+          border-radius: 5px;
+          background-color: $gold;
+          color: #fff;
+          cursor: pointer;
+          font-family: $breadfont;
+        }
+      }
+    }
+
+    #confirmation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: $josefin;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $gold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    #discover-phone {
+      display: none;
+    }
+    #discover-desktop {
+      width: 70%;
+      margin: 0 auto;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 100px;
+      align-items: center;
+
+      h1 {
+        font-family: $headerfont;
+      }
+      h2 {
+        font-family: $josefin;
+        font-weight: 600;
+      }
+
+      p {
+        font-family: $breadfont;
+      }
+
+      .activity {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // align-items: center;
+
+        #left {
+          border-right: 1px solid black;
+          padding: 10px;
+        }
+
+        #right {
+          border-left: 1px solid black;
+          padding-left: 20px;
+        }
+        .text {
+          width: 40%;
+        }
+
+        svg {
+          width: 2px;
+        }
+        #line {
+          height: 200px;
+          width: 2px;
+          border-right: 2px solid black;
+        }
+
+        .pic {
+          width: 45%;
+          background-position: center;
+          height: auto;
+          background-size: cover;
+          background-position: center;
+        }
+        #yoga {
+          background-image: url("../assets/yoga.jpg");
+        }
+        #cooking {
+          background-image: url("../assets/food.jpg");
+        }
+        #food {
+          background-image: url("../assets/mat.jpg");
+        }
+        #spa {
+          background-image: url("../assets/spa.jpg");
+        }
+        #relax {
+          background-image: url("../assets/relax.jpg");
+        }
+        #safari {
+          background-image: url("../assets/safari.jpg");
+        }
+      }
+    }
+
+    .booking {
+      border: 3px solid #5b625d;
+      width: 70%;
+      height: 30vh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h1 {
+        font-family: $josefin;
+        text-align: center;
+        margin: 0;
+      }
+
+      #validation {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: $josefin;
+        font-weight: 600;
+        color: $gold;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        #choose-date,
+        #activity,
+        #people {
+          width: 20%;
+          text-align: center;
+          font-family: $breadfont;
+
+          input,
+          select {
+            width: 100%;
+            margin: 10px 0 0 0;
+            height: 5vh;
+            font-family: $breadfont;
+          }
+        }
+        #button {
+          width: 15%;
+          height: 5vh;
+          margin: 0;
+          padding: 0;
+          border: none;
+          border-radius: 5px;
+          background-color: $gold;
+          color: #fff;
+          cursor: pointer;
+          font-family: $breadfont;
+        }
+      }
+    }
+
+    #confirmation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: $josefin;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $gold;
+      }
+    }
+  }
+}

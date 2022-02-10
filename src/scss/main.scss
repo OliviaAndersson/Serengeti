@@ -1,0 +1,585 @@
+@import "styles";
+
+@import "mixins";
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background-color: $bgcolor;
+  font-family: $breadfont;
+  font-size: 12pt;
+
+  @include header;
+  @include footer;
+}
+
+#background {
+  background-image: url("../assets/camp.jpg");
+  height: 50vh;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  margin-bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header-phone #links,
+#header-desktop,
+#hamburger {
+  background-color: $darkgreen;
+}
+
+#book-link {
+  background-color: $gold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  #info {
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+    // height: 70vh;
+
+    #map {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+    h1 {
+      font-size: 1.7rem;
+      font-family: $josefin;
+    }
+    #small-container {
+      display: flex;
+      flex-direction: column;
+      .small {
+        width: 100%;
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .booking {
+    border: 3px solid #515f52;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 80%;
+    h1 {
+      font-family: $breadfont;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $gold;
+      margin: 20px 0 0 0;
+      text-align: center;
+      padding-left: 0;
+      font-size: 2.5rem;
+    }
+
+    #booking-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+
+      input,
+      select {
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #515f52;
+        font-family: $breadfont;
+        text-transform: uppercase;
+        display: inline;
+        height: 4vh;
+        width: 60%;
+        font-size: 1.5rem;
+      }
+
+      label {
+        font-family: $breadfont;
+        display: inline;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      #arrival,
+      #departure {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        display: inline-flex;
+        flex-direction: column;
+      }
+
+      #kids,
+      #adults {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      #submit {
+        width: 50%;
+        margin: 0;
+        background-color: #303223;
+        color: #fff;
+        display: inline;
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+
+      #submit:hover {
+        background-color: #000;
+      }
+    }
+  }
+
+  #border {
+    margin-top: -2px;
+    width: 100%;
+    background-image: url("../assets/border.png");
+    position: absolute;
+    background-repeat: repeat-x;
+    height: 10px;
+    background-size: 75px 10px;
+  }
+
+  #box {
+    background-image: url("../assets/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 40vh;
+  }
+
+  .facilities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+      font-family: $josefin;
+      padding-top: 40px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #a79d85;
+    }
+
+    #icons-container {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      a {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: #000;
+
+        #vikt {
+          font-size: 2.5rem;
+          color: #000;
+        }
+
+        h6 {
+          font-size: 1.2rem;
+          color: #000;
+          margin-top: 0;
+          padding-top: 0;
+          text-transform: uppercase;
+          font-family: $breadfont;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #mo {
+    margin-top: 0;
+    width: 50%;
+    background-image: url("../assets/mo.png");
+    height: 10px;
+    background-repeat: space;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #quote_pic {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10vh;
+
+    .giraff-pic {
+      width: 80%;
+      margin-bottom: 10px;
+      float: left;
+    }
+
+    #quote {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      gap: 5vh;
+      margin-top: 30px;
+
+      h1 {
+        font-size: 3.5rem;
+        font-family: "Times New Roman", Times, serif;
+        color: #515f52;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      h5,
+      p {
+        font-size: 1.3rem;
+        width: 100%;
+        font-family: $breadfont;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  #info-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 10vh;
+    align-items: center;
+    gap: 30px;
+
+    .square {
+      width: 100%;
+      background-color: $gold;
+      color: #fff;
+      position: relative;
+      border-radius: 10px;
+
+      #content {
+        position: absolute;
+        width: 86%;
+        height: 86%;
+        padding: 7%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        #icon {
+          font-size: 2.2rem;
+        }
+        .text-container {
+          display: flex;
+          flex-direction: column;
+          width: 95%;
+          align-items: center;
+          height: 80%;
+          justify-content: space-evenly;
+
+          h1 {
+            padding: 0px;
+            margin: 0px;
+            font-family: $josefin;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+          }
+          ul {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+
+            li {
+              padding: 0px;
+              margin: 0px;
+              font-size: 1rem;
+              text-align: center;
+              list-style: none;
+            }
+
+            i {
+              margin: 0;
+              font-size: 4rem;
+            }
+
+            #weather-list {
+              font-size: 1.4rem;
+            }
+          }
+          #weather {
+            gap: 15px;
+          }
+
+          a {
+            padding: 5px;
+            background-color: #fff;
+            color: $gold;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .square:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    .mini {
+      max-width: auto;
+      max-height: 65px;
+      margin-left: 55px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    .facilities {
+      #icons-container {
+        a {
+          width: 33%;
+        }
+      }
+    }
+
+    #mo {
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    #info-container {
+      .square {
+        #content {
+          #icon {
+            font-size: 4.5rem;
+          }
+          .text-container {
+            h1 {
+              font-size: 3rem;
+            }
+            ul {
+              li {
+                font-size: 2rem;
+              }
+
+              i {
+                font-size: 6rem;
+              }
+
+              #weather-list {
+                font-size: 2.8rem;
+              }
+            }
+            #weather {
+              gap: 30px;
+            }
+
+            a {
+              padding: 20px;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #background {
+    height: 80vh;
+  }
+  main {
+    #info {
+      width: 60%;
+      #map {
+        width: 20%;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      #small-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        .small {
+          width: 48%;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .booking {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      #booking-container {
+        form {
+          width: 80%;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          font-size: 1rem;
+        }
+
+        input,
+        select {
+          height: 3vh;
+          width: 80%;
+          font-size: 1rem;
+        }
+
+        #submit {
+          width: 100%;
+          height: 5vh;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    #border {
+      margin-top: 0px;
+    }
+
+    #box {
+      height: 80vh;
+    }
+
+    .facilities {
+      h3 {
+        font-size: 2rem;
+      }
+
+      #icons-container {
+        a {
+          width: 16%;
+
+          h6 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    #mo {
+      width: 200px;
+    }
+    #quote_pic {
+      margin-top: 10vh;
+      flex-direction: row;
+
+      .giraff-pic {
+        width: 40%;
+      }
+
+      #quote {
+        width: 40%;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        h5,
+        p {
+          font-size: 1.7;
+        }
+      }
+    }
+
+    #info-container {
+      flex-direction: row;
+
+      .square {
+        width: 40% !important;
+
+        #content {
+          gap: 30px;
+
+          #icon {
+            margin-top: 30px;
+            font-size: 3rem;
+          }
+          .text-container {
+            gap: 20px;
+
+            h1 {
+              font-size: 2rem;
+            }
+            ul {
+              padding: 10px;
+              gap: 20px;
+
+              li {
+                font-size: 1.2rem;
+              }
+
+              i {
+                font-size: 3rem;
+              }
+              #weather-list {
+                font-size: 1.6rem;
+              }
+            }
+
+            a {
+              padding: 15px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

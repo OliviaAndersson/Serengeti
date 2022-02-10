@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Lodger</title>
+    <link href="scss/madeup.scss" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3d16140dea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ts/madeup.ts" type="module"></script>
+  </head>
+
+  <body>
+    <div id="header-desktop">
+      <h1>Serengeti</h1>
+      <ul id="links">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="experiences.html">Aktiviteter</a></li>
+        <li><a href="madeup.html">lodger</a></li>
+        <li><a href="404.html">safari</a></li>
+      </ul>
+      <li id="book-link"><a href="404.html">boka</a></li>
+      <li id="contact-link"><a href="404.html">kontakt</a></li>
+    </div>
+    <div id="header-phone">
+      <div id="hamburger">
+        <i class="fas fa-bars" id="bars"></i>
+        <h1>Serengeti</h1>
+      </div>
+      <div id="links-container">
+        <div id="links">
+          <h1>Serengeti</h1>
+          <i class="fas fa-times" id="close"></i>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="experiences.html">Aktiviteter</a></li>
+            <li><a href="404.html">Spa</a></li>
+            <li><a href="madeup.html">lodger</a></li>
+            <li><a href="404.html">safari</a></li>
+            <li><a href="404.html">kontakt</a></li>
+            <li id="book-link"><a href="404.html">boka</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div id="lodges">
+        <div id="text">
+          <h1>Lodger</h1>
+          <p>
+            På Serengeti Tented Camp kan du antingen bo på i trädkojor eller
+            hotellrum på vår resort eller att bo i tält på savannen!
+          </p>
+        </div>
+      </div>
+
+      <div id="info-wrapper">
+        <div class="small" id="one">
+          <div id="book-container">
+            <h1>Boka här</h1>
+            <!-- <form target="_blank" action="404.html">
+              <div id="dates">
+                <div id="arrival-container">
+                  <label for="arrival">Incheckning</label>
+                  <input
+                    type="date"
+                    id="arrival"
+                    name="arrival"
+                    value="2022-01-21"
+                    min="2022-01-21"
+                    max="2022-12-31"
+                  />
+                </div>
+
+                <div id="departure-container">
+                  <label for="departure">Utchecking</label>
+                  <input
+                    type="date"
+                    id="departure"
+                    name="departure"
+                    value="2022-01-21"
+                    min="2022-01-21"
+                    max="2022-12-31"
+                  />
+                </div>
+              </div>
+
+              <div id="rooms">
+                <select id="number-adults">
+                  <option value="0">VUXNA</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+
+                <select id="number-kids">
+                  <option value="0">BARN (0-17)</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">5</option>
+                  <option value="5">6</option>
+                  <option value="6">7</option>
+                </select>
+              </div>
+
+              <input type="button" name="submit" value="SÖK" id="submit" />
+            </form> -->
+			<button id="submit">SÖK PRISER</button>
+		</div>
+        </div>
+        <div class="large" id="two">
+          <div class="name">Baobabs lodge</div>
+        </div>
+        <div class="large" id="three">
+          <div class="name">Giza lodge</div>
+        </div>
+        <div class="small" id="four">
+          <div class="name">Okavango lodge</div>
+        </div>
+        <div class="small" id="five">
+          <div class="name">Tiébélé lodge</div>
+        </div>
+        <div class="large" id="six">
+          <div class="name">Abuja lodge</div>
+        </div>
+        <div class="large" id="seven">
+          <div class="name">Kakum lodge</div>
+        </div>
+        <div class="small" id="eight">
+          <div class="name">Bo-Kaap lodge</div>
+        </div>
+      </div>
+    </main>
+    <div id="booking">
+      <div id="booking-form">
+        <h1>Sök priser</h1>
+        <form>
+          <div id="check-in-container">
+            <label for="check-in">Incheckning</label>
+            <input type="date" id="check-in" name="check-in" max="2022-12-31" />
+          </div>
+
+          <div id="check-out-container">
+            <label for="check-out">Utchecking</label>
+            <input
+              type="date"
+              id="check-out"
+              name="check-out"
+              max="2022-12-31"
+            />
+          </div>
+
+          <div id="adults-container">
+            <label for="adults">Vuxna</label>
+            <select id="adults">
+              <option value="0">VUXNA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+
+          <div id="kids-container">
+            <label for="kids">Barn (0-17)</label>
+            <select id="kids">
+              <option value="0">BARN (0-17)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+          <button type="button" id="search">SÖK</button>
+        </form>
+		<p id="validation-search">
+		</p>
+	
+      </div>
+
+      <div id="available-rooms">
+	 </div>
+
+	 
+    
+      </div>
+    </div>
+
+	<div id="book">
+		<div id="choosen-room"></div>
+<form action="index.html">
+	<div id="firstname-container">
+		<label for="firstname">Förnamn</label>
+		<input type="text" name="firstname" id="firstname" placeholder="Jane" required>
+	</div>
+	<div id="surname-container">
+		<label for="surname">Efternamn</label>
+		<input type="text" name="surname" id="surname" placeholder="Doe" required>
+	</div>
+	<div id="email-container">
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" placeholder="jane.doe@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+	</div>
+	<div id="phone-container">
+		<label for="phone">Telefonnummer</label>
+		<input type="number" name="phone" id="phone" placeholder="XXX XXX XX XX" pattern="[0-9]{10}" aria-label="Telefonnumret ska vara: XXX XXX XX XX" required>
+	</div>
+	<p>Du betalar på plats!</p>
+	<button type="submit" id="booking-button">Boka</button>
+	<p id="required"></p>
+</form>
+	</div>
+
+    <div id="modal-container"></div>
+    <footer>
+      <div id="border"></div>
+
+      <div id="links-bottom">
+        <div class="l-bo">
+          <h6>Om Serengeti Tented Camp</h6>
+          <ul class="links">
+            <li><a href="404.html">Om oss</a></li>
+            <li><a href="404.html">Hållbarhet</a></li>
+            <li><a href="404.html">Jobba hos oss</a></li>
+            <li><a href="404.html">Våra sammarbetspartners</a></li>
+            <li><a href="404.html">Vi sponsrar</a></li>
+          </ul>
+        </div>
+        <div class="l-bo">
+          <h6>Kundservice</h6>
+          <ul class="links">
+            <li><a href="404.html">Kontakt</a></li>
+            <li><a href="404.html">Frågor och svar</a></li>
+            <li><a href="404.html">Bokningsregler</a></li>
+            <li><a href="404.html">Cookie Policy</a></li>
+            <li><a href="404.html">Intigritetspolicy</a></li>
+          </ul>
+        </div>
+        <div class="l-bo">
+          <h6>Snabblänkar</h6>
+          <ul class="links">
+            <li><a href="404.html">Alltid på Serengeti</a></li>
+            <li>
+              <a href="https://www.tripadvisor.se/" target="_blank"
+                >Lämna omdöme på TripAdvisor</a
+              >
+            </li>
+            <li><a href="404.html">Boka safari</a></li>
+            <li><a href="404.html">Bästa prisgaranti</a></li>
+            <li><a href="404.html">Speciella behov</a></li>
+            <li><a href="404.html">Sitemap</a></li>
+            <li><a href="404.html">Boka lodge</a></li>
+          </ul>
+        </div>
+
+        <img src="assets/map.svg" alt="karta" class="map" />
+      </div>
+    </footer>
+  </body>
+</html>

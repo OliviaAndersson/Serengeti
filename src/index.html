@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Serengeti</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link href="scss/main.scss" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patrick+Hand"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind+Vadodara"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d16140dea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ts/main.ts" type="module"></script>
+  </head>
+
+  <body>
+    <div id="background"></div>
+    <div id="header-desktop">
+      <h1>Serengeti</h1>
+      <ul id="links">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="experiences.html">Aktiviteter</a></li>
+        <li><a href="madeup.html">lodger</a></li>
+        <li><a href="404.html">safari</a></li>
+      </ul>
+      <li id="book-link"><a href="404.html">boka</a></li>
+      <li id="contact-link"><a href="404.html">kontakt</a></li>
+    </div>
+    <div id="header-phone">
+      <div id="hamburger">
+        <i class="fas fa-bars" id="bars"></i>
+        <h1>Serengeti</h1>
+      </div>
+      <div id="links-container">
+        <div id="links">
+          <h1>Serengeti</h1>
+          <i class="fas fa-times" id="close"></i>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="experiences.html">Aktiviteter</a></li>
+            <li><a href="404.html">Spa</a></li>
+            <li><a href="madeup.html">lodger</a></li>
+            <li><a href="404.html">safari</a></li>
+            <li><a href="404.html">kontakt</a></li>
+            <li id="book-link"><a href="404.html">boka</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div id="info">
+        <img src="assets/map.svg" alt="Karta över Tanzania" id="map" />
+        <h1>
+          Serengeti Tented Camp ligger beläget mitt i det oberörda reservatet i
+          Grumenti, som består över 350 000 hektar i norra Tanzania.
+        </h1>
+        <div id="small-container">
+          <div class="small">
+            <p>
+              De intima och mysiga 20-tals inpspirerade tälten är alla placerade
+              mitt på Serengetis omtalade savann. Tälten är alla individuellt
+              inredda och är alla döpta efter de vackraste plaserna i Afrika.
+              Här får gästerna uppleva Serengetis djur- och växtrike på första
+              parkett, utan att tumma på varken bevämlighet eller lyx.
+            </p>
+          </div>
+
+          <div class="small">
+            <p>
+              Kompliment till de förstklassiga tälten ingår det även en 3
+              timmars safari för alla gäster ledda av erfarna lokalbor. Maten på
+              Serengeti Tented Camp består av lokala specialliter blandat med
+              västerländsk mat för att de ska passa alla.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking">
+        <h1>priser</h1>
+        <div id="booking-container">
+          <form>
+            <div id="arrival">
+              <label for="incheck">Inchecking</label>
+              <input
+                type="date"
+                id="incheck"
+                name="trip-start"
+                value="2019-01-21"
+                min="2019-01-21"
+                max="2019-12-31"
+              />
+            </div>
+            <div id="departure">
+              <label for="utcheck">Utcheckning</label>
+              <input
+                type="date"
+                id="utcheck"
+                name="trip-end"
+                value="2019-01-21"
+                min="2019-01-21"
+                max="2019-12-31"
+              />
+            </div>
+            <div id="adults">
+              <label for="number-adults">Vuxna</label>
+              <select id="number-adults">
+                <option value="0">VUXNA</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div id="kids">
+              <label for="number-kids">Barn (0-17)</label>
+              <select id="number-kids">
+                <option value="0">BARN (0-17)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+              </select>
+            </div>
+            <input type="submit" name="submit" value="SÖK" id="submit" />
+          </form>
+        </div>
+      </div>
+      <div id="box"><div id="border"></div></div>
+      <div class="facilities">
+        <h3>Faciliteter</h3>
+        <div id="icons-container">
+          <a href="404.html">
+            <i class="fas fa-spa" id="vikt"></i>
+            <h6>Spa</h6>
+          </a>
+          <a href="404.html">
+            <i class="fas fa-dumbbell" id="vikt"></i>
+            <h6>Gym och fitness</h6>
+          </a>
+          <a href="404.html">
+            <i class="fas fa-campground" id="vikt"></i>
+            <h6>Safari</h6>
+          </a>
+          <a href="404.html">
+            <i class="fas fa-utensils" id="vikt"></i>
+            <h6>Restuarang</h6>
+          </a>
+          <a href="404.html">
+            <i class="fas fa-swimmer" id="vikt"></i>
+            <h6>Pool</h6>
+          </a>
+          <a href="404.html">
+            <i class="fas fa-concierge-bell" id="vikt"></i>
+            <h6>Room service</h6>
+          </a>
+        </div>
+      </div>
+
+      <div id="mo"></div>
+
+      <div id="quote_pic">
+        <img
+          src="assets/giraff.jpg"
+          alt="Bild på giraffer på savannen"
+          class="giraff-pic"
+        />
+        <div id="quote">
+          <h1>”</h1>
+          <h5>
+            Unikt! Fantastiska människor, service och boende i en fantastiskt
+            miljö! Jag skulle verklien rekommendera detta ställe för alla! En
+            dag hoppas jag att jag kan åka tillbaka till detta reservat, och när
+            jag gör det kommer detta definitivt vara stället jag skulle bo på!
+          </h5>
+          <p>-Linda Siam, TripAdvisor</p>
+          <h1>”</h1>
+        </div>
+      </div>
+
+      <div id="info-container">
+        <div class="square">
+          <div id="content">
+            <i class="fas fa-child" alt="Figur av en jeep" id="icon"></i>
+            <div class="text-container">
+              <h1>Dagens aktiviteter</h1>
+              <ul id="today-activities"></ul>
+              <a href="404.html">Anmäl dig här</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="square">
+          <div id="content">
+            <i
+              class="far fa-sun"
+              alt="Figur av en sol och ett moln"
+              id="icon"
+            ></i>
+            <div class="text-container">
+              <h1>Aktuellt väder</h1>
+              <ul id="weather"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- <p>För att enklast ta dig till Serengeti Tented Camp flyger du till
+			Grumeti Airstrip (GTZ). Därifrån hämtas du upp av en av våra chaufförer
+			som kör dig till campen</p> -->
+      </div>
+    </main>
+
+    <footer>
+      <div id="links-bottom">
+        <div class="l-bo">
+          <h6>Om Serengeti Tented Camp</h6>
+          <ul class="links">
+            <li><a href="404.html">Om oss</a></li>
+            <li><a href="404.html">Hållbarhet</a></li>
+            <li><a href="404.html">Jobba hos oss</a></li>
+            <li><a href="404.html">Våra sammarbetspartners</a></li>
+            <li><a href="404.html">Vi sponsrar</a></li>
+          </ul>
+        </div>
+        <div class="l-bo">
+          <h6>Kundservice</h6>
+          <ul class="links">
+            <li><a href="404.html">Kontakt</a></li>
+            <li><a href="404.html">Frågor och svar</a></li>
+            <li><a href="404.html">Bokningsregler</a></li>
+            <li><a href="404.html">Cookie Policy</a></li>
+            <li><a href="404.html">Intigritetspolicy</a></li>
+          </ul>
+        </div>
+        <div class="l-bo">
+          <h6>Snabblänkar</h6>
+          <ul class="links">
+            <li><a href="404.html">Alltid på Serengeti</a></li>
+            <li>
+              <a href="https://www.tripadvisor.se/" target="_blank"
+                >Lämna omdöme på TripAdvisor</a
+              >
+            </li>
+            <li><a href="404.html">Boka safari</a></li>
+            <li><a href="404.html">Bästa prisgaranti</a></li>
+            <li><a href="404.html">Speciella behov</a></li>
+            <li><a href="404.html">Sitemap</a></li>
+            <li><a href="404.html">Boka lodge</a></li>
+          </ul>
+        </div>
+
+        <img src="assets/map.svg" alt="karta" class="map" />
+      </div>
+    </footer>
+  </body>
+</html>
